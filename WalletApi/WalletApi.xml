@@ -1,0 +1,37 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>WalletApi</name>
+    </assembly>
+    <members>
+        <member name="M:WalletApi.Controllers.VirtualWalletController.Post(ViewModel.CreateWalletRequest)">
+            <summary>
+            Create a Wallet that returns an Account Number
+            </summary>
+            <param name="request">The Request to be created</param>
+            <returns>Returns Ok with an Account Number</returns>
+        </member>
+        <member name="M:WalletApi.Controllers.VirtualWalletController.Deposit(ApplicationServices.Wallet.Commands.DepositRequest)">
+            <summary>
+            Deposit to the Virtual Wallet
+            </summary>
+            <param name="request">The Request object</param>
+            <returns>Returns Ok with Account Balance</returns>
+        </member>
+        <member name="M:WalletApi.Controllers.VirtualWalletController.Withdraw(ApplicationServices.Wallet.Commands.WithdrawRequest)">
+            <summary>
+            Withdraw from the Virtual Wallet
+            </summary>
+            <param name="request">The Request object</param>
+            <returns>Returns Ok with Account Balance</returns>
+        </member>
+        <member name="M:WalletApi.Controllers.VirtualWalletController.Transactions(System.String,System.String)">
+            <summary>
+            Get the Transactions
+            </summary>
+            <param name="phoneNumber">phone number of the Wallet owner</param>
+            <param name="accountNumber">account number of the Wallet owner</param>
+            <returns>Returns Ok with with the List of transactions done</returns>
+        </member>
+    </members>
+</doc>
